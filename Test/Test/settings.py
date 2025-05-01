@@ -62,7 +62,15 @@ WSGI_APPLICATION = 'Test.wsgi.application'
 
 # Use environment-provided database config
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'gpcayHhqcytIiXTvaIByNARJOpTWiYdv',
+        'HOST': 'turntable.proxy.rlwy.net',
+        'PORT': '19684',
+    }
 }
 
 AUTH_PASSWORD_VALIDATORS = [
