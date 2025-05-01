@@ -70,6 +70,7 @@ DATABASES = {
         'HOST': 'turntable.proxy.rlwy.net',
         'PORT': '19684',
     }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
