@@ -4,6 +4,7 @@ from pathlib import Path
 from django.contrib.messages import constants as message_constants
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+CSRF_TRUSTED_ORIGINS= ["https://marketplace-production-3136.up.railway.app"]
 
 # Use environment variable for secret key
 SECRET_KEY = 'django-insecure-+cc7=5^@7#k$##3fc@m6q_9%x450vk#7mj5#__hz*&7q%jx@9p'
