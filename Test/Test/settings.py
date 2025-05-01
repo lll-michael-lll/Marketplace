@@ -62,7 +62,6 @@ WSGI_APPLICATION = 'Test.wsgi.application'
 
 # Use environment-provided database config
 DATABASES = {
-    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
@@ -71,7 +70,6 @@ DATABASES = {
         'HOST': 'turntable.proxy.rlwy.net',
         'PORT': '19684',
     }
-}
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
