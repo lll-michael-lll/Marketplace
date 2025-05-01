@@ -6,7 +6,7 @@ from django.contrib.messages import constants as message_constants
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Use environment variable for secret key
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'unsafe-default-key')
+SECRET_KEY = 'django-insecure-+cc7=5^@7#k$##3fc@m6q_9%x450vk#7mj5#__hz*&7q%jx@9p'
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
@@ -85,16 +85,13 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-
-
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'Test/static'),
+    os.path.join(BASE_DIR,'Test/static')
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
